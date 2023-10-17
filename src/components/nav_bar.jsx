@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import UserMenu from './user_menu'
 
 export const NavBar = () => {
   return (
@@ -12,10 +13,25 @@ export const NavBar = () => {
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-        to='/internal'
+        to='/actual_projects'
       >
-        Página Interna
+        Proyectos Actuales
       </NavLink>
+      <NavLink
+        className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
+        to='/old_projects'
+      >
+        Proyectos Anteriores
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
+        to='/about'
+      >
+        Sobre el evento
+      </NavLink>
+      <div>
+        <UserMenu />
+      </div>
     </nav>
   )
 }
