@@ -24,7 +24,10 @@ export const ActualProjectsPage = () => {
         <h1 className='page__title'>Insta Feria</h1>
         <NavBar />
         <h2>Página de Proyectos</h2>
-        <RenderList />
+        <ProjectThumbnail 
+                title='asd'
+                description='holahola'
+                img='https://www.ceupe.com.ve/images/easyblog_articles/230/ges_proyec.png'/>
         </div>
     )
 }
