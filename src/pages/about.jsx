@@ -7,7 +7,6 @@ import LogoUSM from '../assets/usm.png'
 export const AboutPage = () => {
   return (
     <div className='page'>
-      <h1 className='page__title'>Insta Feria</h1>
       <NavBar />
       <h2>Sobre el evento</h2>
       <img src={LogoUSM} height={100} alt='logo usm' /><br />

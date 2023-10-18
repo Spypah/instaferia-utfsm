@@ -21,7 +21,6 @@ export const ActualProjectsPage = () => {
 
     return (
         <div className='page'>
-        <h1 className='page__title'>Insta Feria</h1>
         <NavBar />
         <h2>Página de Proyectos</h2>
         <ProjectThumbnail 
