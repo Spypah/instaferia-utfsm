@@ -12,7 +12,7 @@ import image from '../assets/logo_letra.png'
 
 export const NavBar = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+    <Navbar expand="lg" className="bg-info" sticky="top">
         <Navbar.Brand href="/">
           <img
             alt="logo"
