@@ -5,8 +5,13 @@ import HomePage from '../pages/home'
 import AboutPage from '../pages/about'
 import ActualProjectsPage from '../pages/actual_projects'
 import OldProjectsPage from '../pages/old_projects'
+import Project from '../pages/project'
+import Exposition from '../pages/exposition'
 
 const AppRouter = () => {
+  const projects = [
+    {"title" : "Alimentando Barbies mediante IA", "description" : "Grupo Barbiefascistas", "img" : "https://www.ceupe.com.ve/images/easyblog_articles/230/ges_proyec.png"},
+  ]
   return (
     <BrowserRouter>
       <Routes>
@@ -15,6 +20,9 @@ const AppRouter = () => {
         <Route path='/actual_projects' element={<ActualProjectsPage />} />
         <Route path='/actual_projects/:id' element={<ActualProjectsPage />} />
         <Route path='/old_projects' element={<OldProjectsPage />} />
+        <Route path='/project' element={<Project />} />
+        <Route path='/project/:title' element={<Project />} />
+        <Route path='/project/exposition' element={<Exposition />} />
         <Route path='*' element={<h1>Not Found</h1>} />
       </Routes>
     </BrowserRouter>
