@@ -1,0 +1,91 @@
+body, h1, h2, h3, p, div, img, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho y alto */
+  }
+  .centrado, .textbox-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page{
+    overflow-x: hidden;
+  }
+  
+  .page-container {
+      display: flex;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 20px;
+      margin-right: -1px;
+    }
+  
+  .contenedor-derecha{
+    text-align: right;
+  }
+  
+  .live{
+    float: right;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .imagen-grupo {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .imagen-grupo:hover {
+    transform: scale(1.1);
+  }
+  
+  .live:hover {
+    transform: scale(1.1);
+  }
+  
+  .textbox-container {
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+  }
+  
+  .centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 1rem
+  }
+  
+  .custom-shape-divider-bottom-1697690824 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+    top: 0;
+  }
+  
+  .custom-shape-divider-bottom-1697690824 svg {
+    position: relative;
+    display: block;
+    width: calc(176% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1697690824 .shape-fill {
+    fill: #4A90E2;
+  }
+  
