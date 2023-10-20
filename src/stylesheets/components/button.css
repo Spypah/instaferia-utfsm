@@ -1,0 +1,19 @@
+.my-btn {
+    background-color: #96ead0;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+}
+.my-btn:hover {
+    background-color: #0e9cb8;
+    color: white;
+}
+
+.contenedor-boton{
+    text-align: right;
+}
+.btn.btn-primary[disabled] {
+    background-color: gray;
+    color:black;
+}

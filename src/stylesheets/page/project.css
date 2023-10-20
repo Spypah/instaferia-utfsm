@@ -1,0 +1,60 @@
+body, h1, h2, h3, p, div, img, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho y alto */
+  }
+  .centrado, .textbox-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page{
+    overflow-x: hidden;
+  }
+  
+  .page-container {
+      display: flex;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 20px;
+      margin-right: -1px;
+    }
+  
+  .contenedor-derecha{
+    text-align: right;
+  }
+  
+  .live{
+    float: right;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .imagen-group{
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .live:hover {
+    transform: scale(1.1);
+  }
+  
+  .textbox-container {
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+  }
+  
+  .centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 1rem
+  }

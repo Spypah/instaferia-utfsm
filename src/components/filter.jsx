@@ -4,6 +4,8 @@ import ProjectThumbnail from "./projectCard";
 import { Row, Container, Col } from "react-bootstrap";
 import barbie from "../assets/barbie.png";
 
+import '../stylesheets/filter/filter.css';
+
 export const Filter = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
@@ -17,10 +19,10 @@ export const Filter = () => {
     useEffect(() => {
         setIsLoaded(true);
         setItems([
-            {"title": "Proyecto 1", "description": "Este es el proyecto 1", "img": "https://www.ceupe.com.ve/images/easyblog_articles/230/ges_proyec.png"},
-            {"title": "Barbie", "description": "Hola como estamos", "img": "https://www.ceupe.com.ve/images/easyblog_articles/230/ges_proyec.png"},
-            {"title": "Alimentando Barbies mediante IA", "description": "Grupo Barbiefascistas", "img": barbie},
-        ]);
+            {"title": "Robotron Ayudón", "description": "Robot que realiza ayudantías", "img": "https://openexpoeurope.com/wp-content/uploads/2019/04/IA-PLATAFORMAS-OS.jpg", "en" : true},
+            {"title": "Max estilos", "description": "IA que ayuda a elegir outfits", "img": "https://images.milenio.com/WDS1VczduXBZlXc3at7_RahPD8U=/618x0/uploads/media/2023/07/11/ia-revela-muneco-ken-harry.jpeg", "en" : true},
+            {"title": "Alimentando Barbies mediante IA", "description": "Grupo Barbies", "img": barbie, "en" : false},
+        ]); 
     }, []);
     
     const data = Object.values(items);
@@ -44,17 +46,15 @@ export const Filter = () => {
             <Container >
                 <Row>
                     <Container>
-                        <Row>
-                            <Col className="col-md-auto">
-                                <h3>Ingrese para buscar:</h3>
-                            </Col>
-                            <Col className="col-sm-2">
-                            <div class="form">
+                        <Row className="justify-content-center" style={{ marginTop: '100px' }}>
+                            <Col className="col-sm-6">
+                            <div className="form">
                               <i class="fa fa-search"></i>
                               <input
+                               cl
                                type="text"
-                               class="form-control form-input"
-                               placeholder="Buscar"
+                               className="form-control form-input bg-celeste-input"
+                               placeholder="Busca un proyecto"
                                value={searchQuery}
                                onChange={(e) => setSearchQuery(e.target.value)}/>
                             </div>
@@ -63,10 +63,10 @@ export const Filter = () => {
                     </Container>
                 </Row>
                 <Row>
-                    <Row xs={1} md={3} className="g-4">
+                    <Row xs={1} md={3} className="g-4 ">
                     {Array.from(search(data)).map((item) => (
                         <Col>
-                        <ProjectThumbnail title={item.title} description={item.description} img={item.img}/>
+                        <ProjectThumbnail title={item.title} description={item.description} img={item.img} en={item.en}/>
                         </Col>
                     ))}
                     </Row>

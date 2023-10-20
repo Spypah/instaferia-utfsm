@@ -1,11 +1,11 @@
 {
-  "name": "frontend-sample-app",
+  "name": "Instaferia",
   "version": "0.1.0",
-  "description": "Basic Frontend Development Environment to start an app with Webpack",
+  "description": "Instaferia Frontend",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexarenasf/frontend-sample-app"
+    "url": "https://github.com/Spypah/instaferia-utfsm"
   },
   "scripts": {
     "prod": "webpack --mode=production",
@@ -14,8 +14,9 @@
   "author": "alexarenasf",
   "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/joy": "^5.0.0-beta.11",
     "@mui/material": "^5.10.12",
     "bootstrap": "^5.3.2",
     "react": "^17.0.2",

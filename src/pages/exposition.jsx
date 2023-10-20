@@ -3,14 +3,15 @@ import { Button, Grid, Container, TextField } from '@mui/material'
 import {useState} from 'react';
 
 
-import './project.css';
-import './exposition.css';
+import '../stylesheets/page/exposition.css';
 
 import NavBar from '../components/nav_bar'
 import Comment from '../components/comment'
 
 import '../components/projectCard'
 import image from '../assets/barbie.png'
+import expo from '../assets/expo.png'
+import user from '../assets/user.png'
 
 
 export const Exposition = () => {
@@ -31,7 +32,7 @@ export const Exposition = () => {
 
         const msg = document.getElementById('comment-box').value
 
-        appendComentario(image, msg);
+        appendComentario(user, msg);
 
         document.getElementById('comment-box').value = '';
       };
@@ -45,19 +46,19 @@ export const Exposition = () => {
 
         <Grid container spacing={2}>
             <Grid item xs={10}>
-                <h1> Exposición "[Nombre Grupo?]" </h1>  
+                <h1> Exposición Grupo Barbies  </h1>  
             </Grid>
             <Grid item xs={2}>
-                <Button variant="outlined" href="/project" >Outlined</Button>
+                <Button variant="outlined" href="/project" >Volver a Projecto</Button>
             </Grid>
         </Grid>
 
-        <Container className="video-exposition" maxWidth="100%">
+        <Container className="video-exposition" maxWidth="100%"  >
             <Grid container spacing={2}>
                 <Grid item xs={9}>
                     <img
                         alt="expo"
-                        src={image}
+                        src={expo}
                         width="100%"
                         className="d-inline-block align-top"
                     />{' '}
@@ -67,14 +68,9 @@ export const Exposition = () => {
 
                         <Grid id="comentarios" container direction="column" xs={12}>
                         
-                            <Comment img={image} msg="Wena los cabros" />
-                            <Comment img={image} msg="Y vo qn eri" />
-                            <Comment img={image} msg="🤡🤠🤡🤠" />
-                            <Comment img={image} msg="🤡🤠🤡🤠" />
-                            <Comment img={image} msg="учитель, дай 100" />
-                            <Comment img={image} msg="aaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaa" />
+                            <Comment img={user} msg="Se escucha bien" />
+                            <Comment img={user} msg="Buenos días" />
+                            <Comment img={user} msg="🤠🤠" />
 
                             {listaComentarios.map(data => {
                                 console.log(data)

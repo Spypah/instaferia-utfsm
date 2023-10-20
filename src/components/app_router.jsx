@@ -7,6 +7,7 @@ import ActualProjectsPage from '../pages/actual_projects'
 import OldProjectsPage from '../pages/old_projects'
 import Project from '../pages/project'
 import Exposition from '../pages/exposition'
+import EditProject from '../pages/edit_project'
 
 const AppRouter = () => {
   const projects = [
@@ -23,6 +24,7 @@ const AppRouter = () => {
         <Route path='/project' element={<Project />} />
         <Route path='/project/:title' element={<Project />} />
         <Route path='/project/exposition' element={<Exposition />} />
+        <Route path='/project/edit' element={<EditProject />} />
         <Route path='*' element={<h1>Not Found</h1>} />
       </Routes>
     </BrowserRouter>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './project.css';
+import '../stylesheets/page/project.css';
 
 import NavBar from '../components/nav_bar'
 
@@ -8,10 +8,12 @@ import image from '../assets/barbie.png'
 import live from '../assets/live.gif'
 import grupo from '../assets/grupo.png'
 import { Outlet } from 'react-router-dom'
+import Wave from '../components/wave';
 
 export const Project = ({title, description, img}) => {
   return (
     <div className='page'>
+      <Wave />
       <NavBar />
       <div className="page-container">
         <div className="column">
@@ -32,7 +34,7 @@ export const Project = ({title, description, img}) => {
           </div>
           <div className='titulo-container'>
           <p style={{ textAlign: 'center'}}>
-            Grupo Barbiefascistas
+            Grupo Barbies
           </p>
           </div>
 
@@ -54,7 +56,7 @@ export const Project = ({title, description, img}) => {
           alt="grupo"
           src={grupo}
           width="800rem"
-          className='imagen-grupo'
+          className='imagen-group'
         />
       </div>
       <div className='page-container'>
@@ -65,7 +67,7 @@ export const Project = ({title, description, img}) => {
               className='video'
               width="400" 
               height="250" 
-              src="https://www.youtube.com/embed/NvpZdDRfBlQ" 
+              src="https://www.youtube.com/embed/rrB13utjYV4" 
               title="Chilean Lobster Jumpscare" 
               frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
@@ -81,11 +83,6 @@ export const Project = ({title, description, img}) => {
           </div>
         </div>
       </div>
-      <div class="custom-shape-divider-top-1697696674">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
-</div>
       <Outlet />
     </div>
   );
