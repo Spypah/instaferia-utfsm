@@ -49,7 +49,7 @@ export const Exposition = () => {
                 <h1> Exposición Grupo Barbies  </h1>  
             </Grid>
             <Grid item xs={2}>
-                <Button variant="outlined" href="/project" >Volver a Projecto</Button>
+                <Button variant="outlined" href="/project" >Volver a Proyecto</Button>
             </Grid>
         </Grid>
 
