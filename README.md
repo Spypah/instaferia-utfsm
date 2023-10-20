@@ -1,5 +1,5 @@
 # Instaferia
-##Integrantes
+## Integrantes
 |Nombres|Rol|
 |:--|:--|
 |Juan Francisco Baquedano | 202073611-1 |
