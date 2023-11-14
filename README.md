@@ -1,7 +1,10 @@
-# frontend-sample-app
-Basic Frontend Development Environment to start an app with Webpack
-
-This repo includes `Webpack` to start an environment to build frontend views using `React`.
+# Instaferia
+## Integrantes
+|Nombres|Rol|
+|:--|:--|
+|Juan Francisco Baquedano | 202073611-1 |
+| Matías Contreras Aid | 201904613-6 |
+| Vicente Figueroa | 202073627-8 |
 
 ### Requirements
 - Node >= 16.13.1
@@ -22,11 +25,6 @@ npm run dev
 ```
 
 Now you can open http://localhost:5050
-
-### Packages included
-- [Webpack](https://webpack.js.org/)
-- [React Router](https://reactrouter.com/en/main)
-- [Material UI](https://mui.com/material-ui/getting-started/usage/)
 
 ### About stylesheets
 - Sample stylesheets were written using the [BEM](https://getbem.com/) structure
