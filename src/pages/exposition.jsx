@@ -7,6 +7,7 @@ import '../stylesheets/page/exposition.css';
 
 import NavBar from '../components/nav_bar'
 import Comment from '../components/comment'
+import Wave from '../components/wave';
 
 import '../components/projectCard'
 import image from '../assets/barbie.png'
@@ -42,14 +43,15 @@ export const Exposition = () => {
   return (
 
     <div className='page'>
+        <Wave />
       <NavBar />
 
         <Grid container spacing={2}>
-            <Grid item xs={10}>
+            <Grid item xs={10} >
                 <h1> Exposición Grupo Barbies  </h1>  
             </Grid>
-            <Grid item xs={2}>
-                <Button variant="outlined" href="/project" >Volver a Projecto</Button>
+            <Grid item xs={2} style={{marginTop: '2rem' }}>
+                <Button variant="outlined" href="/project" variant="contained">Volver a Proyecto</Button>
             </Grid>
         </Grid>
 

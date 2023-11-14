@@ -21,7 +21,7 @@ export const Filter = () => {
         setItems([
             {"title": "Robotron Ayudón", "description": "Robot que realiza ayudantías", "img": "https://openexpoeurope.com/wp-content/uploads/2019/04/IA-PLATAFORMAS-OS.jpg", "en" : true},
             {"title": "Max estilos", "description": "IA que ayuda a elegir outfits", "img": "https://images.milenio.com/WDS1VczduXBZlXc3at7_RahPD8U=/618x0/uploads/media/2023/07/11/ia-revela-muneco-ken-harry.jpeg", "en" : true},
-            {"title": "Alimentando Barbies mediante IA", "description": "Grupo Barbies", "img": barbie, "en" : false},
+            {"title": "Alimentando IA con barbies", "description": "Grupo Barbies", "img": barbie, "en" : false},
         ]); 
     }, []);
     
@@ -46,8 +46,8 @@ export const Filter = () => {
             <Container >
                 <Row>
                     <Container>
-                        <Row className="justify-content-center" style={{ marginTop: '100px' }}>
-                            <Col className="col-sm-6">
+                        <Row className="justify-content-center" style={{ marginTop: '1rem' }}>
+                            <Col className="col-sm-6">  
                             <div className="form">
                               <i class="fa fa-search"></i>
                               <input

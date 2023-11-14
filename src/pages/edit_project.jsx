@@ -61,7 +61,7 @@ export const EditProject = () => {
       <NavBar />
       <Wave />
       <Container style={{}}>
-        <Row md={3} >
+        <Row md={3} xs={1}>
           <Col align='left'>
             <Container>
               <Row>
@@ -69,7 +69,7 @@ export const EditProject = () => {
                   <img
                       alt="logo"
                       src={logo}
-                      style={{maxWidth: '10rem'}}
+                      style={{maxWidth: '15rem'}}
                       className="d-inline-block align-top"
                   />{' '}
                 </Col>
@@ -92,8 +92,8 @@ export const EditProject = () => {
             <Container>
               <Row className='justify-content-md-center'>
                 <Col align='center'>
-                  <h1>Inserte titulo:</h1>
-                  <TextareaAutosize id="estetico-edit-h1" label="" className="estetico-edit-h1" defaultValue="Alimentando Barbies mediante IA"/>
+                  <h1>Inserte título</h1>
+                  <TextareaAutosize id="estetico-edit-h1" label="" className="estetico-edit-h1" defaultValue="Alimentando IA con barbies"/>
                 </Col>
               </Row>
               <Row className='justify-content-md-center'>
@@ -104,7 +104,7 @@ export const EditProject = () => {
             </Container>
           </Col>
         </Row>
-        <Row className='justify-content-md-center m-3' >
+        <Row md={2} className='justify-content-md-center' >
           <Col align='center'>
             <Container>
               <Row className='m-3'>
@@ -130,7 +130,21 @@ export const EditProject = () => {
                 </Col>
               </Row>
             </Container>
-          </Col> 
+          </Col>
+          <Col align='center'>
+            <Container>
+              <Row className='justify-content-md-center'>
+                <Col align='center'>
+                  <h1>Inserte descripción</h1>
+                </Col>
+              </Row>
+              <Row className='justify-content-md-center' style={{boxSizing: 'border-box', width:'100%', height:'10rem'}}>
+                <Col align='center'>
+                  <TextareaAutosize style={{boxSizing: 'border-box', width:'100%', height:'100%'}} maxRows={4} label="" defaultValue="El proyecto 'Alimentación Inteligente para Barbies' busca revolucionar la experiencia de juego con las muñecas Barbie mediante la implementación de inteligencia artificial (IA) para simular un proceso de alimentación realista. La idea es proporcionar a los usuarios una interacción más inmersiva y educativa con sus muñecas, llevando la jugabilidad a un nuevo nivel."/>
+                </Col>
+              </Row>
+            </Container>
+          </Col>
         </Row>
         <Row className='justify-content-md-center' md={3}>
           <Col>
@@ -157,23 +171,20 @@ export const EditProject = () => {
               </Row>
             </Container>
           </Col>
-          <Col align='center'>
-          <TextareaAutosize style={{boxSizing: 'border-box', width:'100%', height:'100%'}} maxRows={4} label="" defaultValue="El proyecto 'Alimentación Inteligente para Barbies' busca revolucionar la experiencia de juego con las muñecas Barbie mediante la implementación de inteligencia artificial (IA) para simular un proceso de alimentación realista. La idea es proporcionar a los usuarios una interacción más inmersiva y educativa con sus muñecas, llevando la jugabilidad a un nuevo nivel."/>
-          </Col>
+        </Row>
+        <Row className='justify-content-md-center' md={3}>
+          <Container>
+              <Row className='justify-content-md-center' md={2} style={{marginTop: '1.5rem', marginBottom: '1.5rem'}}>
+                <Col align='center'>
+                  <ButtonMat   variant="contained" color="error" href={"/project/"}>Descartar Cambios</ButtonMat>
+                </Col>
+                <Col align='center'>
+                  <ButtonMat  variant="contained" color="success" href={"/project/edited"}>Confirmar Cambios</ButtonMat >
+                </Col>
+              </Row>
+          </Container>
         </Row>
       </Container>
-
-
-    <Container>
-        <Row className='justify-content-md-center' md={3}>
-          <Col align='center'>
-             <ButtonMat className='my-btn'  variant="primary" href={"/project/"}>Confirmar Cambios</ButtonMat>
-            </Col>
-        </Row>
-
-    </Container>
-
-
 
       <Outlet />
     </div>
